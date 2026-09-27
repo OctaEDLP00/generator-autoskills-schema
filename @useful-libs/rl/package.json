@@ -1,0 +1,34 @@
+{
+  "name": "@useful-libs/rl",
+  "version": "0.0.1",
+  "description": "Readline prompt wrapper with colored output and validation",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./package.json": {
+      "import": "./package.json"
+    }
+  },
+  "files": [
+    "index.ts",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup index.ts --format esm --dts --outDir ../../build/rl",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/rl",
+    "type": "github",
+    "url": "https://github.com/OctaEDLP00/useful-libs"
+  },
+  "bugs": "https://github.com/OctaEDLP00/useful-libs/issues",
+  "homepage": "https://github.com/OctaEDLP00/useful-libs"
+}

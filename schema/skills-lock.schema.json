@@ -1,0 +1,4439 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Autoskills Lockfile",
+  "description": "Configuration schema for Autoskills lockfile (skills-lock.json)",
+  "type": "object",
+  "required": [
+    "version",
+    "skills"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "./schema/skills-lock.schema.json",
+      "description": ""
+    },
+    "version": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/semver"
+        },
+        {
+          "$ref": "#/definitions/version"
+        }
+      ]
+    },
+    "skills": {
+      "type": "object",
+      "description": "Installed skills in your project",
+      "properties": {
+        "react-best-practices": {
+          "description": "Agent Skill react-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/agent-skills",
+              "description": "Source: vercel-labs/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "composition-patterns": {
+          "description": "Agent Skill composition-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/agent-skills",
+              "description": "Source: vercel-labs/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "next-best-practices": {
+          "description": "Agent Skill next-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/next-skills",
+              "description": "Source: vercel-labs/next-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "next-cache-components": {
+          "description": "Agent Skill next-cache-components",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/next-skills",
+              "description": "Source: vercel-labs/next-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "next-upgrade": {
+          "description": "Agent Skill next-upgrade",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/next-skills",
+              "description": "Source: vercel-labs/next-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "vue-debug-guides": {
+          "description": "Agent Skill vue-debug-guides",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "hyf0/vue-skills",
+              "description": "Source: hyf0/vue-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "vue": {
+          "description": "Agent Skill vue",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "antfu/skills",
+              "description": "Source: antfu/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "vue-best-practices": {
+          "description": "Agent Skill vue-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "antfu/skills",
+              "description": "Source: antfu/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "nuxt": {
+          "description": "Agent Skill nuxt",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "antfu/skills",
+              "description": "Source: antfu/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "vue-pinia-best-practices": {
+          "description": "Agent Skill vue-pinia-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vuejs-ai/skills",
+              "description": "Source: vuejs-ai/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "svelte5-best-practices": {
+          "description": "Agent Skill svelte5-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "ejirocodes/agent-skills",
+              "description": "Source: ejirocodes/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "svelte-code-writer": {
+          "description": "Agent Skill svelte-code-writer",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "sveltejs/ai-tools",
+              "description": "Source: sveltejs/ai-tools"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "angular-developer": {
+          "description": "Agent Skill angular-developer",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "angular/skills",
+              "description": "Source: angular/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "reference-core": {
+          "description": "Agent Skill reference-core",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "angular/angular",
+              "description": "Source: angular/angular"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "reference-signal-forms": {
+          "description": "Agent Skill reference-signal-forms",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "angular/angular",
+              "description": "Source: angular/angular"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "reference-compiler-cli": {
+          "description": "Agent Skill reference-compiler-cli",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "angular/angular",
+              "description": "Source: angular/angular"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "adev-writing-guide": {
+          "description": "Agent Skill adev-writing-guide",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "angular/angular",
+              "description": "Source: angular/angular"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "pr_review": {
+          "description": "Agent Skill pr_review",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "angular/angular",
+              "description": "Source: angular/angular"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "astro": {
+          "description": "Agent Skill astro",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "astrolicious/agent-skills",
+              "description": "Source: astrolicious/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "tailwind-css-patterns": {
+          "description": "Agent Skill tailwind-css-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "giuseppe-trisciuoglio/developer-kit",
+              "description": "Source: giuseppe-trisciuoglio/developer-kit"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "shadcn": {
+          "description": "Agent Skill shadcn",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "shadcn/ui",
+              "description": "Source: shadcn/ui"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "typescript-advanced-types": {
+          "description": "Agent Skill typescript-advanced-types",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "react-hook-form": {
+          "description": "Agent Skill react-hook-form",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "pproenca/dot-skills",
+              "description": "Source: pproenca/dot-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "zod": {
+          "description": "Agent Skill zod",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "pproenca/dot-skills",
+              "description": "Source: pproenca/dot-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "supabase-postgres-best-practices": {
+          "description": "Agent Skill supabase-postgres-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "supabase/agent-skills",
+              "description": "Source: supabase/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "neon-postgres": {
+          "description": "Agent Skill neon-postgres",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "neondatabase/agent-skills",
+              "description": "Source: neondatabase/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "instantdb": {
+          "description": "Agent Skill instantdb",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "instantdb/skills",
+              "description": "Source: instantdb/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "playwright-best-practices": {
+          "description": "Agent Skill playwright-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "currents-dev/playwright-best-practices-skill",
+              "description": "Source: currents-dev/playwright-best-practices-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "building-native-ui": {
+          "description": "Agent Skill building-native-ui",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "native-data-fetching": {
+          "description": "Agent Skill native-data-fetching",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "upgrading-expo": {
+          "description": "Agent Skill upgrading-expo",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "expo-tailwind-setup": {
+          "description": "Agent Skill expo-tailwind-setup",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "expo-dev-client": {
+          "description": "Agent Skill expo-dev-client",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "expo-deployment": {
+          "description": "Agent Skill expo-deployment",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "expo-cicd-workflows": {
+          "description": "Agent Skill expo-cicd-workflows",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "expo-api-routes": {
+          "description": "Agent Skill expo-api-routes",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "use-dom": {
+          "description": "Agent Skill use-dom",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "expo/skills",
+              "description": "Source: expo/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "design-mobile-apps": {
+          "description": "Agent Skill design-mobile-apps",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "sleekdotdesign/agent-skills",
+              "description": "Source: sleekdotdesign/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "dart-best-practices": {
+          "description": "Agent Skill dart-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "kevmoo/dash_skills",
+              "description": "Source: kevmoo/dash_skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "flutter-expert": {
+          "description": "Agent Skill flutter-expert",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "jeffallan/claude-skills",
+              "description": "Source: jeffallan/claude-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "flutter-animations": {
+          "description": "Agent Skill flutter-animations",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "madteacher/mad-agents-skills",
+              "description": "Source: madteacher/mad-agents-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "flutter-testing": {
+          "description": "Agent Skill flutter-testing",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "madteacher/mad-agents-skills",
+              "description": "Source: madteacher/mad-agents-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "kotlin-tooling-cocoapods-spm-migration": {
+          "description": "Agent Skill kotlin-tooling-cocoapods-spm-migration",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "Kotlin/kotlin-agent-skills",
+              "description": "Source: Kotlin/kotlin-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "kotlin-tooling-agp9-migration": {
+          "description": "Agent Skill kotlin-tooling-agp9-migration",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "Kotlin/kotlin-agent-skills",
+              "description": "Source: Kotlin/kotlin-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-kotlin-core": {
+          "description": "Agent Skill android-kotlin-core",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-compose-foundations": {
+          "description": "Agent Skill android-compose-foundations",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-architecture-clean": {
+          "description": "Agent Skill android-architecture-clean",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-di-hilt": {
+          "description": "Agent Skill android-di-hilt",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-gradle-build-logic": {
+          "description": "Agent Skill android-gradle-build-logic",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-coroutines-flow": {
+          "description": "Agent Skill android-coroutines-flow",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-networking-retrofit-okhttp": {
+          "description": "Agent Skill android-networking-retrofit-okhttp",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "android-testing-unit": {
+          "description": "Agent Skill android-testing-unit",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "krutikJain/android-agent-skills",
+              "description": "Source: krutikJain/android-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "remotion": {
+          "description": "Agent Skill remotion",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "remotion-dev/skills",
+              "description": "Source: remotion-dev/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "tanstack-start": {
+          "description": "Agent Skill tanstack-start",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "tanstack-skills/tanstack-skills",
+              "description": "Source: tanstack-skills/tanstack-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "chrome-extension-development": {
+          "description": "Agent Skill chrome-extension-development",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "mindrally/skills",
+              "description": "Source: mindrally/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk": {
+          "description": "Agent Skill clerk",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-setup": {
+          "description": "Agent Skill clerk-setup",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-custom-ui": {
+          "description": "Agent Skill clerk-custom-ui",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-backend-api": {
+          "description": "Agent Skill clerk-backend-api",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-orgs": {
+          "description": "Agent Skill clerk-orgs",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-webhooks": {
+          "description": "Agent Skill clerk-webhooks",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-testing": {
+          "description": "Agent Skill clerk-testing",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "best-practices": {
+          "description": "Agent Skill best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "better-auth/skills",
+              "description": "Source: better-auth/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "emailAndPassword": {
+          "description": "Agent Skill emailAndPassword",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "better-auth/skills",
+              "description": "Source: better-auth/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "organization": {
+          "description": "Agent Skill organization",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "better-auth/skills",
+              "description": "Source: better-auth/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "twoFactor": {
+          "description": "Agent Skill twoFactor",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "better-auth/skills",
+              "description": "Source: better-auth/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "turborepo": {
+          "description": "Agent Skill turborepo",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel/turborepo",
+              "description": "Source: vercel/turborepo"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "vite": {
+          "description": "Agent Skill vite",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "antfu/skills",
+              "description": "Source: antfu/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "azure-deploy": {
+          "description": "Agent Skill azure-deploy",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "microsoft/github-copilot-for-azure",
+              "description": "Source: microsoft/github-copilot-for-azure"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "azure-ai": {
+          "description": "Agent Skill azure-ai",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "microsoft/github-copilot-for-azure",
+              "description": "Source: microsoft/github-copilot-for-azure"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "azure-cost": {
+          "description": "Agent Skill azure-cost",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "microsoft/github-copilot-for-azure",
+              "description": "Source: microsoft/github-copilot-for-azure"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "azure-diagnostics": {
+          "description": "Agent Skill azure-diagnostics",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "microsoft/github-copilot-for-azure",
+              "description": "Source: microsoft/github-copilot-for-azure"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "use-ai-sdk": {
+          "description": "Agent Skill use-ai-sdk",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel/ai",
+              "description": "Source: vercel/ai"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "elevenlabs-tts": {
+          "description": "Agent Skill elevenlabs-tts",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "inferen-sh/skills",
+              "description": "Source: inferen-sh/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "elevenlabs-music": {
+          "description": "Agent Skill elevenlabs-music",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "inferen-sh/skills",
+              "description": "Source: inferen-sh/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deploy-to-vercel": {
+          "description": "Agent Skill deploy-to-vercel",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/agent-skills",
+              "description": "Source: vercel-labs/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "cloudflare": {
+          "description": "Agent Skill cloudflare",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wrangler": {
+          "description": "Agent Skill wrangler",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "workers-best-practices": {
+          "description": "Agent Skill workers-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "web-perf": {
+          "description": "Agent Skill web-perf",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "cloudflare-deploy": {
+          "description": "Agent Skill cloudflare-deploy",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "openai/skills",
+              "description": "Source: openai/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "durable-objects": {
+          "description": "Agent Skill durable-objects",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "agents-sdk": {
+          "description": "Agent Skill agents-sdk",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "sandbox-sdk": {
+          "description": "Agent Skill sandbox-sdk",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/skills",
+              "description": "Source: cloudflare/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "terraform-style-guide": {
+          "description": "Agent Skill terraform-style-guide",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "hashicorp/agent-skills",
+              "description": "Source: hashicorp/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "refactor-module": {
+          "description": "Agent Skill refactor-module",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "hashicorp/agent-skills",
+              "description": "Source: hashicorp/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "terraform-stacks": {
+          "description": "Agent Skill terraform-stacks",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "hashicorp/agent-skills",
+              "description": "Source: hashicorp/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "terraform-module-library": {
+          "description": "Agent Skill terraform-module-library",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "swiftui-expert-skill": {
+          "description": "Agent Skill swiftui-expert-skill",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "avdlee/swiftui-agent-skill",
+              "description": "Source: avdlee/swiftui-agent-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "swift-concurrency": {
+          "description": "Agent Skill swift-concurrency",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "avdlee/swift-concurrency-agent-skill",
+              "description": "Source: avdlee/swift-concurrency-agent-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "xcode-build-orchestrator": {
+          "description": "Agent Skill xcode-build-orchestrator",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "avdlee/xcode-build-optimization-agent-skill",
+              "description": "Source: avdlee/xcode-build-optimization-agent-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "swift-testing-expert": {
+          "description": "Agent Skill swift-testing-expert",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "avdlee/swift-testing-agent-skill",
+              "description": "Source: avdlee/swift-testing-agent-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "core-data-expert": {
+          "description": "Agent Skill core-data-expert",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "avdlee/core-data-agent-skill",
+              "description": "Source: avdlee/core-data-agent-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "oxlint": {
+          "description": "Agent Skill oxlint",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "delexw/claude-code-misc",
+              "description": "Source: delexw/claude-code-misc"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-core": {
+          "description": "Agent Skill gsap-core",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-scrolltrigger": {
+          "description": "Agent Skill gsap-scrolltrigger",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-performance": {
+          "description": "Agent Skill gsap-performance",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-plugins": {
+          "description": "Agent Skill gsap-plugins",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-timeline": {
+          "description": "Agent Skill gsap-timeline",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-utils": {
+          "description": "Agent Skill gsap-utils",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-frameworks": {
+          "description": "Agent Skill gsap-frameworks",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-animation": {
+          "description": "Agent Skill threejs-animation",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-fundamentals": {
+          "description": "Agent Skill threejs-fundamentals",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-shaders": {
+          "description": "Agent Skill threejs-shaders",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-geometry": {
+          "description": "Agent Skill threejs-geometry",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-interaction": {
+          "description": "Agent Skill threejs-interaction",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-materials": {
+          "description": "Agent Skill threejs-materials",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-postprocessing": {
+          "description": "Agent Skill threejs-postprocessing",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-lighting": {
+          "description": "Agent Skill threejs-lighting",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-textures": {
+          "description": "Agent Skill threejs-textures",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "threejs-loaders": {
+          "description": "Agent Skill threejs-loaders",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudai-x/threejs-skills",
+              "description": "Source: cloudai-x/threejs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "bun": {
+          "description": "Agent Skill bun",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "midudev/autoskills",
+              "description": "Source: midudev/autoskills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "elysiajs": {
+          "description": "Agent Skill elysiajs",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "elysiajs/skills",
+              "description": "Source: elysiajs/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "nodejs-backend-patterns": {
+          "description": "Agent Skill nodejs-backend-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "nodejs-best-practices": {
+          "description": "Agent Skill nodejs-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "sickn33/antigravity-awesome-skills",
+              "description": "Source: sickn33/antigravity-awesome-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "bash-defensive-patterns": {
+          "description": "Agent Skill bash-defensive-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "golang-patterns": {
+          "description": "Agent Skill golang-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "golang-testing": {
+          "description": "Agent Skill golang-testing",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deno-expert": {
+          "description": "Agent Skill deno-expert",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "denoland/skills",
+              "description": "Source: denoland/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deno-guidance": {
+          "description": "Agent Skill deno-guidance",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "denoland/skills",
+              "description": "Source: denoland/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deno-frontend": {
+          "description": "Agent Skill deno-frontend",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "denoland/skills",
+              "description": "Source: denoland/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deno-deploy": {
+          "description": "Agent Skill deno-deploy",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "denoland/skills",
+              "description": "Source: denoland/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deno-sandbox": {
+          "description": "Agent Skill deno-sandbox",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "denoland/skills",
+              "description": "Source: denoland/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "deno-typescript": {
+          "description": "Agent Skill deno-typescript",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "mindrally/skills",
+              "description": "Source: mindrally/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-plugin-development": {
+          "description": "Agent Skill wp-plugin-development",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-rest-api": {
+          "description": "Agent Skill wp-rest-api",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-block-themes": {
+          "description": "Agent Skill wp-block-themes",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-block-development": {
+          "description": "Agent Skill wp-block-development",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-performance": {
+          "description": "Agent Skill wp-performance",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wordpress-router": {
+          "description": "Agent Skill wordpress-router",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-project-triage": {
+          "description": "Agent Skill wp-project-triage",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "wp-wpcli-and-ops": {
+          "description": "Agent Skill wp-wpcli-and-ops",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wordpress/agent-skills",
+              "description": "Source: wordpress/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "java-docs": {
+          "description": "Agent Skill java-docs",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "java-coding-standards": {
+          "description": "Agent Skill java-coding-standards",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "java-springboot": {
+          "description": "Agent Skill java-springboot",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "prisma-database-setup": {
+          "description": "Agent Skill prisma-database-setup",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "prisma/skills",
+              "description": "Source: prisma/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "prisma-client-api": {
+          "description": "Agent Skill prisma-client-api",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "prisma/skills",
+              "description": "Source: prisma/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "prisma-cli": {
+          "description": "Agent Skill prisma-cli",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "prisma/skills",
+              "description": "Source: prisma/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "prisma-postgres": {
+          "description": "Agent Skill prisma-postgres",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "prisma/skills",
+              "description": "Source: prisma/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "stripe-best-practices": {
+          "description": "Agent Skill stripe-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "stripe/ai",
+              "description": "Source: stripe/ai"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "upgrade-stripe": {
+          "description": "Agent Skill upgrade-stripe",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "stripe/ai",
+              "description": "Source: stripe/ai"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "hono": {
+          "description": "Agent Skill hono",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "yusukebe/hono-skill",
+              "description": "Source: yusukebe/hono-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "vitest": {
+          "description": "Agent Skill vitest",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "antfu/skills",
+              "description": "Source: antfu/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "drizzle": {
+          "description": "Agent Skill drizzle",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "bobmatnyc/claude-mpm-skills",
+              "description": "Source: bobmatnyc/claude-mpm-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "nestjs-best-practices": {
+          "description": "Agent Skill nestjs-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "kadajett/agent-nestjs-skills",
+              "description": "Source: kadajett/agent-nestjs-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "tauri-v2": {
+          "description": "Agent Skill tauri-v2",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "nodnarbnitram/claude-code-extensions",
+              "description": "Source: nodnarbnitram/claude-code-extensions"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "dotnet-best-practices": {
+          "description": "Agent Skill dotnet-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "dotnet-design-pattern-review": {
+          "description": "Agent Skill dotnet-design-pattern-review",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "dotnet-upgrade": {
+          "description": "Agent Skill dotnet-upgrade",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "csharp-xunit": {
+          "description": "Agent Skill csharp-xunit",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "csharp-async": {
+          "description": "Agent Skill csharp-async",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "csharp-docs": {
+          "description": "Agent Skill csharp-docs",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "csharp-nunit": {
+          "description": "Agent Skill csharp-nunit",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "csharp-mstest": {
+          "description": "Agent Skill csharp-mstest",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "csharp-tunit": {
+          "description": "Agent Skill csharp-tunit",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "containerize-aspnetcore": {
+          "description": "Agent Skill containerize-aspnetcore",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "aspnet-core": {
+          "description": "Agent Skill aspnet-core",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "openai/skills",
+              "description": "Source: openai/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "fluentui-blazor": {
+          "description": "Agent Skill fluentui-blazor",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "aspnet-minimal-api-openapi": {
+          "description": "Agent Skill aspnet-minimal-api-openapi",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "github/awesome-copilot",
+              "description": "Source: github/awesome-copilot"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "minimal-api-file-upload": {
+          "description": "Agent Skill minimal-api-file-upload",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "dotnet/skills",
+              "description": "Source: dotnet/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rust-best-practices": {
+          "description": "Agent Skill rust-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "apollographql/skills",
+              "description": "Source: apollographql/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "ruby": {
+          "description": "Agent Skill ruby",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "lucianghinda/superpowers-ruby",
+              "description": "Source: lucianghinda/superpowers-ruby"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "ruby-on-rails-best-practices": {
+          "description": "Agent Skill ruby-on-rails-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "sergiodxa/agent-skills",
+              "description": "Source: sergiodxa/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-guides": {
+          "description": "Agent Skill rails-guides",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "lucianghinda/superpowers-ruby",
+              "description": "Source: lucianghinda/superpowers-ruby"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-stack-conventions": {
+          "description": "Agent Skill rails-stack-conventions",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-code-review": {
+          "description": "Agent Skill rails-code-review",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-migration-safety": {
+          "description": "Agent Skill rails-migration-safety",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-security-review": {
+          "description": "Agent Skill rails-security-review",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-upgrade": {
+          "description": "Agent Skill rails-upgrade",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "ombulabs/claude-code_rails-upgrade-skill",
+              "description": "Source: ombulabs/claude-code_rails-upgrade-skill"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "redis-development": {
+          "description": "Agent Skill redis-development",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "redis/agent-skills",
+              "description": "Source: redis/agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "generating-sorbet": {
+          "description": "Agent Skill generating-sorbet",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "DmitryPogrebnoy/ruby-agent-skills",
+              "description": "Source: DmitryPogrebnoy/ruby-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "generating-sorbet-inline": {
+          "description": "Agent Skill generating-sorbet-inline",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "DmitryPogrebnoy/ruby-agent-skills",
+              "description": "Source: DmitryPogrebnoy/ruby-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-background-jobs": {
+          "description": "Agent Skill rails-background-jobs",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rspec-best-practices": {
+          "description": "Agent Skill rspec-best-practices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rspec-service-testing": {
+          "description": "Agent Skill rspec-service-testing",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "test-driven-development": {
+          "description": "Agent Skill test-driven-development",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "lucianghinda/superpowers-ruby",
+              "description": "Source: lucianghinda/superpowers-ruby"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "php-pro": {
+          "description": "Agent Skill php-pro",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "jeffallan/claude-skills",
+              "description": "Source: jeffallan/claude-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "laravel-specialist": {
+          "description": "Agent Skill laravel-specialist",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "jeffallan/claude-skills",
+              "description": "Source: jeffallan/claude-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "laravel-patterns": {
+          "description": "Agent Skill laravel-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "python-executor": {
+          "description": "Agent Skill python-executor",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "inferen-sh/skills",
+              "description": "Source: inferen-sh/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "python-testing-patterns": {
+          "description": "Agent Skill python-testing-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "fastapi-templates": {
+          "description": "Agent Skill fastapi-templates",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "fastapi-python": {
+          "description": "Agent Skill fastapi-python",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "mindrally/skills",
+              "description": "Source: mindrally/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "fastmcp": {
+          "description": "Agent Skill fastmcp",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "sharanharsoor/skills",
+              "description": "Source: sharanharsoor/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "django-expert": {
+          "description": "Agent Skill django-expert",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vintasoftware/django-ai-plugins",
+              "description": "Source: vintasoftware/django-ai-plugins"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "django-patterns": {
+          "description": "Agent Skill django-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "django-security": {
+          "description": "Agent Skill django-security",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "flask-api-development": {
+          "description": "Agent Skill flask-api-development",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "aj-geddes/useful-ai-prompts",
+              "description": "Source: aj-geddes/useful-ai-prompts"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "pydantic": {
+          "description": "Agent Skill pydantic",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "bobmatnyc/claude-mpm-skills",
+              "description": "Source: bobmatnyc/claude-mpm-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "sqlalchemy": {
+          "description": "Agent Skill sqlalchemy",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "bobmatnyc/claude-mpm-skills",
+              "description": "Source: bobmatnyc/claude-mpm-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "sqlalchemy-alembic-expert-best-practices-code-review": {
+          "description": "Agent Skill sqlalchemy-alembic-expert-best-practices-code-review",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wispbit-ai/skills",
+              "description": "Source: wispbit-ai/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "pandas-pro": {
+          "description": "Agent Skill pandas-pro",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "jeffallan/claude-skills",
+              "description": "Source: jeffallan/claude-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "pandas-data-analysis": {
+          "description": "Agent Skill pandas-data-analysis",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "pluginagentmarketplace/custom-plugin-python",
+              "description": "Source: pluginagentmarketplace/custom-plugin-python"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "machine-learning": {
+          "description": "Agent Skill machine-learning",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "pluginagentmarketplace/custom-plugin-python",
+              "description": "Source: pluginagentmarketplace/custom-plugin-python"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "scikit-learn": {
+          "description": "Agent Skill scikit-learn",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "davila7/claude-code-templates",
+              "description": "Source: davila7/claude-code-templates"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "senior-data-scientist": {
+          "description": "Agent Skill senior-data-scientist",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "davila7/claude-code-templates",
+              "description": "Source: davila7/claude-code-templates"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "python-background-jobs": {
+          "description": "Agent Skill python-background-jobs",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "wshobson/agents",
+              "description": "Source: wshobson/agents"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "python-patterns": {
+          "description": "Agent Skill python-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "affaan-m/everything-claude-code",
+              "description": "Source: affaan-m/everything-claude-code"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "tailwind-v4-shadcn": {
+          "description": "Agent Skill tailwind-v4-shadcn",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "secondsky/claude-skills",
+              "description": "Source: secondsky/claude-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "gsap-react": {
+          "description": "Agent Skill gsap-react",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "greensock/gsap-skills",
+              "description": "Source: greensock/gsap-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "migrate-to-vinext": {
+          "description": "Agent Skill migrate-to-vinext",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "cloudflare/vinext",
+              "description": "Source: cloudflare/vinext"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "nodejs-express-server": {
+          "description": "Agent Skill nodejs-express-server",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "aj-geddes/useful-ai-prompts",
+              "description": "Source: aj-geddes/useful-ai-prompts"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-nextjs-patterns": {
+          "description": "Agent Skill clerk-nextjs-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-nuxt-patterns": {
+          "description": "Agent Skill clerk-nuxt-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-vue-patterns": {
+          "description": "Agent Skill clerk-vue-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-react-patterns": {
+          "description": "Agent Skill clerk-react-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-astro-patterns": {
+          "description": "Agent Skill clerk-astro-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-expo-patterns": {
+          "description": "Agent Skill clerk-expo-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "react-three-fiber": {
+          "description": "Agent Skill react-three-fiber",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "vercel-labs/json-render",
+              "description": "Source: vercel-labs/json-render"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-react-router-patterns": {
+          "description": "Agent Skill clerk-react-router-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-tanstack-patterns": {
+          "description": "Agent Skill clerk-tanstack-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-chrome-extension-patterns": {
+          "description": "Agent Skill clerk-chrome-extension-patterns",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-swift": {
+          "description": "Agent Skill clerk-swift",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "clerk-android": {
+          "description": "Agent Skill clerk-android",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "clerk/skills",
+              "description": "Source: clerk/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-tdd-slices": {
+          "description": "Agent Skill rails-tdd-slices",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "rails-bug-triage": {
+          "description": "Agent Skill rails-bug-triage",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "igmarin/rails-agent-skills",
+              "description": "Source: igmarin/rails-agent-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "frontend-design": {
+          "description": "Agent Skill frontend-design",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "anthropics/skills",
+              "description": "Source: anthropics/skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "accessibility": {
+          "description": "Agent Skill accessibility",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "addyosmani/web-quality-skills",
+              "description": "Source: addyosmani/web-quality-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        },
+        "seo": {
+          "description": "Agent Skill seo",
+          "properties": {
+            "source": {
+              "type": "string",
+              "const": "addyosmani/web-quality-skills",
+              "description": "Source: addyosmani/web-quality-skills"
+            },
+            "sourceType": {
+              "$ref": "#/definitions/source-type"
+            },
+            "computedHash": {
+              "$ref": "#/definitions/computed-hash"
+            }
+          },
+          "required": [
+            "source",
+            "sourceType"
+          ]
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "definitions": {
+    "semver": {
+      "type": "string",
+      "format": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Version of the autoskill lockfile (SEMVER)",
+      "default": "1.0.0"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Version of the autoskill lockfile",
+      "default": 1
+    },
+    "source-type": {
+      "type": "string",
+      "enum": [
+        "autoskills-registry"
+      ]
+    },
+    "computed-hash": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    }
+  }
+}

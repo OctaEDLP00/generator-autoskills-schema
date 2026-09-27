@@ -1,0 +1,16 @@
+{
+  "name": "generator-autoskills-schema",
+  "private": true,
+  "scripts": {
+    "start": "bun main.ts"
+  },
+  "dependencies": {
+    "@useful-lib/rl": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
